@@ -1,0 +1,6 @@
+/* Style like a H2 */
+.author {
+    font-family: var(--heading-ff);
+    font-size: 1.5rem;
+    font-weight: 700;
+}

@@ -1,0 +1,102 @@
+:root {
+    --babyblue: oklch(76% 0.13 250);
+    --black: oklch(17% 0 0);
+    --blue: oklch(51% 0.15 250);
+    --gray: oklch(51% 0 0);
+    --lightbabyblue: oklch(87% 0.06 250);
+    --purple: oklch(35% 0.18 320);
+    --red: oklch(51% 0.2 27);
+
+    --element-spacing: 2rem;
+    --box-shadow: oklch(51% 0 0 / 0.4);
+}
+
+main {
+    padding: 2rem;
+}
+
+main>* {
+    margin-block-end: var(--element-spacing);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* Section 1 */
+
+.pretty {
+    font-weight: bold;
+    color: var(--red);
+}
+
+img {
+    margin: 0 auto;
+}
+
+/* Link Styles */
+
+a:link {
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(--purple);
+}
+
+a:hover {
+    color: var(--black);
+    text-shadow: var(--babyblue) 1px 1px 10px;
+}
+
+a:active {
+    color: var(--red);
+}
+
+hr {
+    margin-block: var(--element-spacing);
+    border: 0.2rem solid var(--babyblue);
+    border-radius: 0.2rem;
+}
+
+/* Section 2 */
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0.5rem;
+}
+
+tr:nth-of-type(even) {
+    background-color: var(--lightbabyblue);
+}
+
+th {
+    text-align: left;
+}
+
+a span {
+    vertical-align: middle;
+}
+
+td a:hover span svg {
+    box-shadow: 0 0 1rem var(--black);
+}
+
+/* Section 3 */
+
+li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.quote {
+    border: 1px solid var(--box-shadow);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
+    ;
+}
