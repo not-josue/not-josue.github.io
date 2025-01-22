@@ -1,0 +1,299 @@
+:root {
+    /* Colors */
+    --black: oklch(17% 0 0);
+    --white: oklch(100% 0 0);
+
+    --rose-50: oklch(0.971 0.013 17.38);
+    --rose-200: oklch(0.885 0.062 18.334);
+    --rose-400: oklch(0.712 0.194 13.428);
+    --rose-500: oklch(0.637 0.237 25.331);
+    --rose-600: oklch(0.586 0.253 17.585);
+
+    /* Utilities */
+    --border-radius: 0.4rem;
+    --transition: 0.3s;
+}
+
+/* Mini Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility Classes */
+.translate {
+    transform: translateX(-100%);
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+/* Navigation */
+header {
+    border-bottom: 4px solid var(--rose-400);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--white);
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 1rem;
+    font-weight: 700;
+    max-width: 80rem;
+    margin: auto;
+}
+
+/* Hamburger */
+#hamburger {
+    padding: 1rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    display: grid;
+    align-items: center;
+    row-gap: 0.3rem;
+    z-index: 999;
+    position: relative;
+}
+
+#hamburger span {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--black);
+    transition: transform var(--transition);
+}
+
+#hamburger:hover,
+#hamburger:focus-visible {
+    background-color: var(--rose-400);
+
+    & span {
+        background-color: var(--white);
+    }
+}
+
+#hamburger[aria-expanded="true"] {
+    & #burger-top {
+        transform: rotate(45deg) translate(0.5rem, 0.5rem);
+    }
+
+    & #burger-mid {
+        transform: scale(0);
+    }
+
+    & #burger-bot {
+        transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    }
+}
+
+#navlinks {
+    display: none;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--border-radius);
+    color: var(--rose-600);
+    padding: 1rem;
+}
+
+.link:hover,
+.link:focus-visible {
+    background-color: var(--rose-200);
+}
+
+/* Mobile Navigation */
+#mobile-nav {
+    position: fixed;
+    background-color: var(--white);
+    width: 100%;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    height: calc(100vh - 98px);
+    transition: 0.3s;
+    z-index: 999;
+    padding: 2rem;
+}
+
+#mobile-nav ul {
+    padding-inline-start: 0;
+    display: grid;
+}
+
+#mobile-nav a {
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--border-radius);
+}
+
+#mobile-nav li {
+    padding: 1rem;
+}
+
+#mobile-nav li:hover {
+    background-color: var(--rose-200);
+}
+
+/* Brand */
+#brand {
+    display: flex;
+    column-gap: 0.5rem;
+    vertical-align: middle;
+    align-items: center;
+    color: var(--rose-600);
+}
+
+/* Hero */
+#hero {
+    height: calc(100vh - 98px);
+    background-image: url(./images/eso-small.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--black);
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    padding-inline: 2rem;
+    margin-top: 98px;
+}
+
+#overlay {
+    position: absolute;
+    inset: 0;
+    background-color: oklch(17% 0 0 / .4);
+}
+
+#hero *:not(#overlay) {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Sections */
+
+article {
+    padding: 3rem 2rem;
+}
+
+article:nth-of-type(even) {
+    background: linear-gradient(to top right, var(--rose-500), var(--rose-600), var(--rose-500));
+    color: var(--white);
+
+    & h2 {
+        color: var(--white);
+    }
+}
+
+h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--rose-600);
+}
+
+article div {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+img {
+    border-radius: var(--border-radius);
+}
+
+/* Table */
+table {
+    padding: 0.5rem;
+    border-spacing: 0;
+}
+
+caption {
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+tr:nth-of-type(even) {
+    background-color: var(--rose-50);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to top right, var(--rose-500), var(--rose-600), var(--rose-500));
+    color: var(--white);
+    text-align: center;
+    padding-block: 2rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    #main-nav {
+        padding-inline: 4rem;
+    }
+
+    #hero {
+        background-image: url(./images/eso-med.webp);
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    article p {
+        max-width: 45ch;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hamburger {
+        display: none;
+    }
+
+    #navlinks {
+        display: flex;
+    }
+
+    #hero {
+        background-image: url(./images/eso-lg.webp);
+    }
+
+    article {
+        padding-block: 4rem;
+    }
+
+    article:not(:last-of-type)>div {
+        display: flex;
+        justify-content: center;
+    }
+}

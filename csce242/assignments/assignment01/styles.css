@@ -12,6 +12,8 @@
 }
 
 main {
+    max-width: 65ch;
+    margin: 0 auto;
     padding: 2rem;
 }
 
@@ -98,5 +100,10 @@ li:not(:last-child) {
     border: 1px solid var(--box-shadow);
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
-    ;
+}
+
+@media (max-width: 640px) {
+    main {
+        padding-inline: 3rem;
+    }
 }

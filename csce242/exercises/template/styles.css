@@ -1,0 +1,52 @@
+/* Structure */
+body {
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header,
+footer {
+    background-color: darkblue;
+    padding: 5px;
+    color: white;
+}
+
+/* Navigations */
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav li {
+    list-style-type: none;
+    display: inline-block
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+#main-nav a:hover {
+    color: crimson;
+    border-bottom: 1px solid white;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
