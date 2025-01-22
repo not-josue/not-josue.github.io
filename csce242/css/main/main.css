@@ -249,6 +249,10 @@ h3 {
     transition: color var(--transition);
 }
 
+.link-card:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
 .link-card li {
     display: flex;
     justify-content: space-evenly;
