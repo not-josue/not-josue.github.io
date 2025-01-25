@@ -92,10 +92,3 @@ ol:where([role="list"]) {
 }
 
 /* Media Queries */
-
-/* Small */
-@media (max-width: 640px) {
-    h1 {
-        font-size: 1.7rem;
-    }
-}
