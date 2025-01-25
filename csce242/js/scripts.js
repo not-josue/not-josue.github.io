@@ -38,11 +38,4 @@ function RemoveColors() {
   });
 }
 
-// Accessibility for Popover Button
-const colorSetBtn = document.getElementById("color-settings");
-colorSetBtn.onclick = () => {
-  const isExpanded = colorSetBtn.ariaExpanded === "true";
-  colorSetBtn.ariaExpanded = !isExpanded;
-};
-
 // TODO: fix Focus Trapping for Popover
