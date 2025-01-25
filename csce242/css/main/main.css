@@ -225,10 +225,9 @@ main {
 #assignments {
     padding-inline-start: 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    margin: auto;
-    width: max-content;
 }
 
 /* Link Cards */
