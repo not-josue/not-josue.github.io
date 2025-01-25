@@ -202,14 +202,6 @@ main {
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 1.7rem;
-}
-
-svg {
-    vertical-align: middle;
-}
-
 body {
     color: var(--color-para);
     min-height: 100vh;
@@ -225,62 +217,32 @@ main {
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
 }
 
-h1,
-h2,
-h3 {
-    color: var(--color-h);
-    transition: color var(--transition);
-    text-align: center;
-}
-
-/* Style like a header */
-#author {
-    font-family: var(--heading-ff);
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-#d-title {
-    text-align: center;
-}
-
 #description {
     max-width: 65ch;
     margin: auto;
 }
 
-h2 {
-    text-align: center;
-}
-
 #assignments {
     padding-inline-start: 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
+    margin: auto;
+    width: max-content;
 }
 
 /* Link Cards */
 
 .link-card {
-    display: block;
     padding: 1rem;
     border: 1px dotted var(--color-h);
     border-radius: 0.5rem;
     text-decoration: none;
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
     background-color: var(--bg-start);
-    width: max-content;
     color: var(--color-h);
     transition: color var(--transition);
 }
-
-.link-card h3 {
-    font-size: 1.250rem;
-}
-
 
 .link-card li {
     display: flex;
@@ -318,6 +280,39 @@ h2 {
     outline-width: 0.5rem;
 }
 
+/* Typography */
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-h);
+    transition: color var(--transition);
+    text-align: center;
+}
+
+#author {
+    font-family: var(--heading-ff);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#d-title {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.link-card h3 {
+    font-size: 1.250rem;
+}
+
 /* Aside for Settings */
 
 #settings {
@@ -333,6 +328,10 @@ h2 {
 }
 
 /* Dark/Light Mode Settings */
+
+svg {
+    vertical-align: middle;
+}
 
 #bg-settings,
 #color-settings {
@@ -490,5 +489,14 @@ html.dark #pink {
 
     h2 {
         font-size: 1.7rem;
+    }
+
+    #assignments {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .link-card p {
+        font-size: 1rem;
     }
 }
