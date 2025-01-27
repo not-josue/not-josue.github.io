@@ -21,8 +21,8 @@
 
 :root {
     /* Fonts */
-    --heading-ff: "Outfit", serif, sans-serif;
-    --text-ff: "Montserrat", serif, sans-serif;
+    --heading-ff: "Outfit", Arial, Helvetica, sans-serif;
+    --text-ff: "Montserrat", Arial, Helvetica, sans-serif;
 
     /* Breakpoints 
     small: 640px 
