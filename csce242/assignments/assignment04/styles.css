@@ -93,6 +93,10 @@ figure {
     white-space: nowrap;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 /* Navigation */
 
 body>header {

@@ -10,7 +10,9 @@ mobileSearchBtn.onclick = () => {
 
 // Open and close Mobile Navigation
 const burgerBtn = document.getElementById("hamburger");
+const bodyEl = document.body;
 burgerBtn.onclick = () => {
   const isExpanded = burgerBtn.ariaExpanded === "true";
   burgerBtn.ariaExpanded = !isExpanded;
+  bodyEl.classList.toggle("overflow");
 };
