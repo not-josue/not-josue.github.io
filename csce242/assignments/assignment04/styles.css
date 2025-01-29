@@ -986,5 +986,8 @@ h4 {
         padding-inline: 1rem;
     }
 
+    footer footer ul[role="list"] {
+        margin: auto;
+    }
 
 }
