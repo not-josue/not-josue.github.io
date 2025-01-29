@@ -698,7 +698,7 @@ h4 {
     /* Navigation */
 
     #primary-nav {
-        max-width: 1170px;
+        max-width: var(--max-width);
         margin: auto;
         padding: 1rem;
         align-items: center;
@@ -795,14 +795,14 @@ h4 {
 
     /* Structure */
     #content {
-        padding-inline: 1rem;
-        max-width: 1170px;
+        padding-inline: 1.5rem;
+        max-width: var(--max-width);
         margin: auto;
     }
 
     main>header h1 {
         font-size: 25.6px;
-        max-width: 1170px;
+        max-width: var(--max-width);
         margin: auto;
         padding-inline: 1rem;
         font-weight: 600;
@@ -851,13 +851,14 @@ h4 {
             padding-block: 1rem;
 
             .wrapper {
-                max-width: 1170px;
+                max-width: var(--max-width);
                 width: 100%;
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 align-content: center;
+                padding-inline: 1rem;
             }
 
             & h2 {
@@ -874,21 +875,23 @@ h4 {
         #social {
 
             #social_wrapper {
-                max-width: 1170px;
+                max-width: var(--max-width);
                 width: 100%;
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
+                padding-inline: 1rem;
             }
         }
 
         #footer-nav-wrapper {
-            max-width: 1170px;
+            max-width: var(--max-width);
             width: 100%;
             margin: auto;
             display: flex;
             justify-content: center;
             column-gap: 2rem;
+            padding-inline: 1rem;
 
             #mobile-footer-nav {
                 display: none;
@@ -911,20 +914,39 @@ h4 {
 
         & ul[role="list"] {
             justify-content: start;
-            max-width: 1170px;
-            margin: auto;
+            padding-inline: 0.5rem;
+            max-width: var(--max-width);
         }
     }
 
 }
 
 @media (min-width: 1024px) {
+
+    #primary-nav,
+    #content,
+    main>header h1,
+    footer header .wrapper,
+    footer #social #social_wrapper,
+    footer #footer-nav-wrapper,
+    footer footer ul[role="list"] {
+        max-width: 980px;
+    }
+
     #top-nav {
         column-gap: 2rem;
 
         *:not(:last-child) {
             margin-right: 0.5rem;
         }
+    }
+
+    aside {
+        width: fit-content;
+    }
+
+    aside li {
+        font-size: 15px;
     }
 
     #info {
@@ -934,12 +956,35 @@ h4 {
             font-size: 1.1rem;
 
             .active::before {
-                transform: translate(-80%, 2%);
+                transform: translate(-80%, 40%);
             }
+        }
+
+        >div {
+            max-width: 720px;
         }
 
         & div[role="grid"] {
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+        }
+
+        .link-card img {
+            width: 200px;
+            height: 102px;
+        }
+
+        .link-card p {
+            max-width: 25ch;
         }
     }
+
+    footer header .wrapper,
+    footer #social #social_wrapper,
+    footer #footer-nav-wrapper,
+    footer footer ul[role="list"] {
+        padding-inline: 1rem;
+    }
+
+
 }
