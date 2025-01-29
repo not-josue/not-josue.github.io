@@ -1,0 +1,864 @@
+<!-- CSCE242 Josue F -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Assignment 04, a clone of the University of South Carolina's College of Arts and Sciences webpage." />
+    <title>College of Arts and Sciences - College of Arts and Sciences | University of South Carolina</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Primary Nav -->
+        <nav id="primary-nav">
+            <!-- Brand -->
+            <div id="brand">
+                <a href="#">
+                    <img src="./assets/svg/brand.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Form -->
+            <form action="">
+                <label class="visually-hidden" for="lg-search">Search sc.edu</label>
+                <input id="search-lg" type="search" placeholder="SEARCH SC.EDU">
+                <svg aria-hidden="true" fill="white" xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+                <button type="submit">GO</button>
+            </form>
+
+            <div id="top-nav">
+                <div>
+                    <strong>GATEWAY FOR:</strong>
+                    <a href="#">STUDENTS</a>
+                    <a href="#">FACULTY & STAFF</a>
+                    <a href="#">ALUMNI</a>
+                    <a href="#">PARENTS & FAMILIES</a>
+                </div>
+                <div>
+                    <a href="#">CALENDAR</a>
+                    <a href="#">MAP</a>
+                    <a href="#">DIRECTORY</a>
+                    <a href="#">APPLY</a>
+                    <a href="#">GIVE</a>
+                </div>
+            </div>
+
+            <!-- Mobile Buttons -->
+            <div id="mobile-buttons">
+                <button id="mobile-search" aria-expanded="false" aria-label="search menu">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </button>
+                <button id="hamburger" aria-expanded="false" aria-label="navigation menu">
+                    <span aria-hidden="true">Menu</span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Search Dropdown -->
+        <div id="search-menu" role="menuitem">
+            <input type="search" placeholder="Search sc.edu">
+            <button>Go</button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav id="mobile-nav">
+            <ul role="list">
+                <li>
+                    <a href="#">College of Arts and Sciences</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Academics</a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Departments, Schools and Programs</a>
+                </li>
+                <li>
+                    <a href="#">Centers and Institutes</a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Beyond the Classroom</a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Research</a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Alumni and Friends</a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Support the College</a>
+                </li>
+                <li>
+                    <a href="#">My Arts and Sciences</a>
+                </li>
+                <div>
+                    <span>TOOLS & RESOURCES</span>
+                </div>
+                <li>
+                    <a href="#">Calendar</a>
+                </li>
+                <li>
+                    <a href="#">Map</a>
+                </li>
+                <li>
+                    <a href="#">Directory</a>
+                </li>
+                <li>
+                    <a href="#">Apply</a>
+                <li>
+                    <a href="#">Give</a>
+                </li>
+                <li>
+                    <a href="#">Student Gateway</a>
+                </li>
+                <li>
+                    <a href="#">Faculty & Staff Gateway</a>
+                </li>
+                <li>
+                    <a href="#">Parents & Families Gateway</a>
+                </li>
+                <li>
+                    <a href="#">Alumni Gateway</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <header>
+            <h1>
+                College of Arts and Sciences
+            </h1>
+        </header>
+
+        <div id="content">
+
+            <section id="mobile-hero">
+
+                <figure>
+                    <img src="https://place-hold.it/500x240" alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h2>CANVASSING THE CITY &#187;</h2>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, nesciunt iusto?
+                        </p>
+                    </figcaption>
+                </figure>
+
+            </section>
+
+            <section id="large-hero">
+                <img src="https://place-hold.it/1170x564" alt="">
+                <div>
+                    <h2><a href="#">CANVASSING THE CITY</a> &#187;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </section>
+
+            <section id="info">
+
+                <aside>
+                    <ul role="list">
+                        <li>
+                            <a class="active" href="#">College of Arts and Sciences</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Academics</a>
+                        </li>
+                        <li>
+                            <a href="#">Departments, Schools and Programs</a>
+                        </li>
+                        <li>
+                            <a href="#">Centers and Institutes</a>
+                        </li>
+                        <li>
+                            <a href="#">Beyond the Classroom</a>
+                        </li>
+                        <li>
+                            <a href="#">Research</a>
+                        </li>
+                        <li>
+                            <a href="#">Alumni and Friends</a>
+                        </li>
+                        <li>
+                            <a href="#">Support the College</a>
+                        </li>
+                    </ul>
+                    <span>
+                        <a href="#">My Arts and Sciences</a> &#187
+                    </span>
+                </aside>
+
+                <div>
+
+                    <p id="intro">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error esse repellat repudiandae ab.
+                        Placeat fugiat deleniti aspernatur necessitatibus deserunt. Rem, repellat non, nesciunt
+                        similique numquam vitae voluptatum id saepe libero ex unde earum inventore deleniti suscipit
+                        distinctio, doloribus nam!
+                    </p>
+
+                    <hr>
+
+                    <!-- Link Cards -->
+                    <div role="grid">
+
+                        <a href="#" class="link-card">
+                            <img srcset="https://place-hold.it/220x106 220w, https://place-hold.it/259x123 259w"
+                                sizes="(max-width: 767px) 220px, 259px" src="https://place-hold.it/220x106" alt="">
+                            <div class="card-content">
+                                <h3>Undergraduate &#187;</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis!</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="link-card">
+                            <img srcset="https://place-hold.it/220x106 220w, https://place-hold.it/259x123 259w"
+                                sizes="(max-width: 767px) 220px, 259px" src="https://place-hold.it/220x106" alt="">
+                            <div class="card-content">
+                                <h3>Graduate &#187;</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="link-card">
+                            <img srcset="https://place-hold.it/220x106 220w, https://place-hold.it/259x123 259w"
+                                sizes="(max-width: 767px) 220px, 259px" src="https://place-hold.it/220x106" alt="">
+                            <div class="card-content">
+                                <h3>Departments &#187;</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis!</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="link-card">
+                            <img srcset="https://place-hold.it/220x106 220w, https://place-hold.it/259x123 259w"
+                                sizes="(max-width: 767px) 220px, 259px" src="https://place-hold.it/220x106" alt="">
+                            <div class="card-content">
+                                <h3>Careers &#187;</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="link-card">
+                            <img srcset="https://place-hold.it/220x106 220w, https://place-hold.it/259x123 259w"
+                                sizes="(max-width: 767px) 220px, 259px" src="https://place-hold.it/220x106" alt="">
+                            <div class="card-content">
+                                <h3>Research &#187;</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis!</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="link-card">
+                            <img srcset="https://place-hold.it/220x106 220w, https://place-hold.it/259x123 259w"
+                                sizes="(max-width: 767px) 220px, 259px" src="https://place-hold.it/220x106" alt="">
+                            <div class="card-content">
+                                <h3>Alumni & Friends &#187;</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- News -->
+                    <div id="news">
+
+                        <h3>Arts and Sciences News</h3>
+                        <span>Find us here:</span>
+
+                        <!-- Social Media -->
+                        <div>
+                            <!-- Facebook -->
+                            <a href="#" aria-label="Visit Facebook">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+                                </svg>
+                            </a>
+                            <!-- X -->
+                            <a href="#" aria-label="Visit X-Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                </svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#" aria-label="Visit Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+                                </svg>
+                            </a>
+                            <!-- Threads -->
+                            <a href="#" aria-label="Visit Threads">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM294.2 244.3c19.5 9.3 33.7 23.5 41.2 40.9c10.4 24.3 11.4 63.9-20.2 95.4c-24.2 24.1-53.5 35-95.1 35.3h-.2c-46.8-.3-82.8-16.1-106.9-46.8C91.5 341.8 80.4 303.7 80 256v-.1-.1c.4-47.7 11.5-85.7 33-113.1c24.2-30.7 60.2-46.5 106.9-46.8h.2c46.9 .3 83.3 16 108.2 46.6c12.3 15.1 21.3 33.3 27 54.4l-26.9 7.2c-4.7-17.2-11.9-31.9-21.4-43.6c-19.4-23.9-48.7-36.1-87-36.4c-38 .3-66.8 12.5-85.5 36.2c-17.5 22.3-26.6 54.4-26.9 95.5c.3 41.1 9.4 73.3 26.9 95.5c18.7 23.8 47.4 36 85.5 36.2c34.3-.3 56.9-8.4 75.8-27.3c21.5-21.5 21.1-47.9 14.2-64c-4-9.4-11.4-17.3-21.3-23.3c-2.4 18-7.9 32.2-16.5 43.2c-11.4 14.5-27.7 22.4-48.4 23.5c-15.7 .9-30.8-2.9-42.6-10.7c-13.9-9.2-22-23.2-22.9-39.5c-1.7-32.2 23.8-55.3 63.5-57.6c14.1-.8 27.3-.2 39.5 1.9c-1.6-9.9-4.9-17.7-9.8-23.4c-6.7-7.8-17.1-11.8-30.8-11.9h-.4c-11 0-26 3.1-35.6 17.6l-23-15.8c12.8-19.4 33.6-30.1 58.5-30.1h.6c41.8 .3 66.6 26.3 69.1 71.8c1.4 .6 2.8 1.2 4.2 1.9l.1 .5zm-71.8 67.5c17-.9 36.4-7.6 39.7-48.8c-8.8-1.9-18.6-2.9-29-2.9c-3.2 0-6.4 .1-9.6 .3c-28.6 1.6-38.1 15.5-37.4 27.9c.9 16.7 19 24.5 36.4 23.6l-.1-.1z" />
+                                </svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="#" aria-label="Visit LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg>
+                            </a>
+                            <!-- YouTube -->
+                            <a href="#" aria-label="Visit YouTube">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z" />
+                                </svg>
+                            </a>
+
+                        </div>
+
+                        <a href="#" class="article-card">
+                            <article>
+                                <img src="https://place-hold.it/112x112" alt="">
+                                <div>
+                                    <h4>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, ipsam modi!
+                                        &#187;
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis recusandae
+                                        quibusdam deserunt consequuntur ullam quaerat enim non laudantium, laborum
+                                        tempore
+                                        fugiat nihil molestiae distinctio possimus mollitia veritatis illo. Similique
+                                        enim
+                                        laboriosam quod adipisci eaque sit dolores culpa, deserunt, corrupti saepe,
+                                        laborum
+                                        cupiditate odit error dicta necessitatibus consectetur voluptates quis? Dolorum
+                                        totam culpa nostrum consequatur maxime voluptates veniam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <hr>
+
+                        <a href="#" class="article-card">
+                            <article>
+                                <img src="https://place-hold.it/112x112" alt="">
+                                <div>
+                                    <h4>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum.
+                                        &#187;
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis
+                                        cupiditate fuga voluptates minus praesentium. Perspiciatis porro dolor nihil
+                                        dolorem cumque incidunt tempora expedita laborum.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <hr>
+
+                        <div id="more-news">
+                            <a href="#">View More News &#187;</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <header>
+
+            <div class="wrapper">
+
+                <h2>College of Arts and Sciences</h2>
+
+                <div>
+                    <a href="#">Location</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Give</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Social Media</a>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div id="social">
+            <div id="social_wrapper">
+                <a href="#">
+                    <img src="./assets/svg/brand-black.svg" alt="" height="59" width="300">
+                </a>
+                <div>
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Visit Facebook">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="35" width="35"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Visit Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" width="35"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <!-- X-Twitter -->
+                    <a href="#" aria-label="Visit X-Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" width="35"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div id="footer-nav-wrapper">
+
+                <div>
+                    <h2>COLLEGES & SCHOOLS</h2>
+                    <hr>
+                    <div class="footer-nav lg-only">
+
+                        <ul role="list">
+                            <li>
+                                <a href="#">
+                                    Arts & Sciences
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Business
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Education
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Engineering and Computing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    The Graduate School
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Hospitality, Retail and Sport Management
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul role="list">
+                            <li>
+                                <a href="#">
+                                    Information and Communications
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Law
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Medicine (Columbia)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Medicine (Greenville)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Music
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nursing
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul role="list">
+                            <li>
+                                <a href="#">
+                                    Pharmacy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Public Health
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Social Work
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    South Carolina Honors College
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Mobile Only -->
+                <div id="mobile-footer-nav">
+
+                    <ul role="list">
+                        <li>
+                            <a href="#">
+                                Arts and Sciences
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Business
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Engineering and Computing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                The Graduate School
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Hospitality, Retail and Sport Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Information and Communications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Law
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Medicine (Columbia)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Medicine (Greenville)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Music
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nursing
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul role="list">
+                        <li>
+                            <a href="#">
+                                Pharmacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Public Health
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Social Work
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                South Carolina Honors College
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Offices & Divisions -->
+                <div>
+                    <h2>OFFICES & DIVISIONS</h2>
+                    <hr>
+                    <div class="footer-nav">
+
+                        <ul role="list">
+                            <li>
+                                <a href="#">
+                                    Employment
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Undergraduate Admissions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Financial Aid and Scholarships
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Bursar (fee payment)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Veterans and Military Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Disability Resources
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul role="list">
+                            <li>
+                                <a href="#">
+                                    Access and Opportunity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Human Resources
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Law Enforcement and Safety
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    University Libraries
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    All Offices and Divisions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Disability Resources
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div>
+                    <h2>TOOLS</h2>
+                    <hr>
+                    <div class="footer-nav">
+
+                        <ul role="list">
+                            <li>
+                                <a href="#">
+                                    Carolina Alert
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Campus Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    my.sc.edu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blackboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Campus Safety and Wellness
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    PeopleSoft Finance
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <footer>
+
+            <ul role="list">
+                <li>
+                    <span>&copy;</span>
+                    <a href="#">
+                        University of South Carolina
+                    </a>
+                    <span> |</span>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy
+                    </a>
+                    <span> | </span>
+                </li>
+                <li>
+                    <a href="#">
+                        Student Consumer Information
+                    </a>
+                    <span> | </span>
+                </li>
+                <li>
+                    <a href="#">
+                        Transparency Initiative
+                    </a>
+                    <span> | </span>
+                </li>
+                <li>
+                    <a href="#">
+                        Civil Rights and Title IX
+                    </a>
+                    <span> | </span>
+                </li>
+                <li>
+                    <a href="#">
+                        Digital Accessibility
+                    </a>
+                    <span> | </span>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </footer>
+
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
