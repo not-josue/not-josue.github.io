@@ -249,6 +249,7 @@ main {
     align-items: center;
     flex-direction: column;
     row-gap: 1rem;
+    text-align: center;
 }
 
 .link-card img {
@@ -495,5 +496,12 @@ html.dark #pink {
 
     .link-card p {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    #assignments {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
