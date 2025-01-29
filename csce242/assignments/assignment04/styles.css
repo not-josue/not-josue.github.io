@@ -966,7 +966,11 @@ h4 {
 
         & div[role="grid"] {
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 0;
+            row-gap: 1.5rem;
+        }
+
+        .link-card {
+            max-width: 200px;
         }
 
         .link-card img {
