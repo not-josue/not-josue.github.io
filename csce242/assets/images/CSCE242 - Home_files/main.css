@@ -2,7 +2,6 @@
     /* Colors */
     --black: oklch(17% 0 0);
     --white: oklch(96% 0 0);
-    --dark-gray: oklch(39.5% 0 0);
 
     --blue-50: oklch(0.97 0.014 254.604);
     --blue-300: oklch(0.809 0.105 251.813);
@@ -150,26 +149,6 @@ html.dark {
 
     .link-card p {
         color: var(--white);
-    }
-
-    #settings {
-
-        & a {
-
-            svg {
-                fill: var(--white);
-            }
-        }
-
-        & a:hover {
-
-            filter: brightness(0.8);
-        }
-    }
-
-    #data-settings {
-        color: var(--black);
-        background-color: var(--color-h);
     }
 
     #light-mode {
@@ -334,6 +313,16 @@ h2 {
 
 /* Aside for Settings */
 
+#data-display {
+    position: fixed;
+    bottom: 1rem;
+    right: 10rem;
+    background-color: var(--bg-main);
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
+}
+
 #settings {
     background-color: var(--bg-main);
     padding: 0.5rem;
@@ -343,59 +332,7 @@ h2 {
     border-radius: 0.6rem;
     anchor-name: --color-anchor;
     display: flex;
-    justify-content: center;
-    column-gap: 0.3rem;
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
-
-    /* GitHub Link */
-
-    & a:hover {
-
-        svg {
-            fill: var(--dark-gray);
-        }
-    }
-}
-
-/* Data Settings */
-
-#proj_header,
-.link-card[data-type="projects"],
-#project-mode {
-    display: none;
-}
-
-html.projects {
-
-    #assign_header,
-    .link-card[data-type="assignment"],
-    #assign-mode {
-        display: none;
-    }
-
-    #proj_header,
-    .link-card[data-type="projects"],
-    #project-mode {
-        display: block;
-    }
-
-}
-
-#data-settings {
-    position: fixed;
-    bottom: 1rem;
-    right: 10rem;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.7rem;
-    color: var(--white);
-    background-color: var(--bg-end);
-    transition: var(--transition);
-}
-
-#data-settings:hover,
-#data-settings:focus-visible {
-    filter: brightness(0.8);
 }
 
 /* Dark/Light Mode Settings */
@@ -423,6 +360,43 @@ svg {
 
 #dark-mode {
     display: none;
+}
+
+/* Data Settings */
+
+#proj_header,
+.link-card[data-type="projects"],
+#project-mode {
+    display: none;
+}
+
+html.projects {
+
+    #assign_header,
+    .link-card[data-type="assignment"],
+    #assign-mode {
+        display: none;
+    }
+
+    #proj_header,
+    .link-card[data-type="projects"],
+    #project-mode {
+        display: block;
+    }
+
+}
+
+#data-settings {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    color: var(--color-h);
+    background-color: transparent;
+
+    :hover,
+    :focus-visible {
+        filter: brightness(0.8);
+    }
 }
 
 /* Color Settings */
