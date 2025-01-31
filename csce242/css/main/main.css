@@ -463,7 +463,7 @@ svg {
     border-radius: 0.4rem;
     margin-block-end: 0.5rem;
     bottom: anchor(top);
-    left: anchor(left);
+    right: anchor(right);
 }
 
 #palette:popover-open {
