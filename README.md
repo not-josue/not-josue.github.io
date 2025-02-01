@@ -14,7 +14,7 @@ This is a collection of my projects for CSCE 242 - Web Applications at the Unive
 
 2. [Assignment 02](https://not-josue.github.io/csce242/assignments/assignment02/index.html) - Basic CSS
 
-![A webpage about a store that sells games and toys shown on different viewports](./assetsimages/csce240/assignments/assignment02.png)
+![A webpage about a store that sells games and toys shown on different viewports](./assets/images/csce240/assignments/assignment02.png)
 
 3. [Assignment 03](https://not-josue.github.io/csce242/assignments/assignment03/index.html) - Page Layout
 
@@ -29,3 +29,7 @@ This is a collection of my projects for CSCE 242 - Web Applications at the Unive
 1. [Part 01](https://not-josue.github.io/csce242/projects/part1/part1.pdf) - Topic Selection
 
 ![A pdf with the details of a website project proposal including the name of the website and its features.](./assets//images/csce240/projects/project_part1v2.png)
+
+2. [Part 02](https://not-josue.github.io/csce242/projects/part2/index.html) - Wireframe
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/csce240/projects/project_part2.png)
