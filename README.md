@@ -2,34 +2,8 @@
 
 ## CSCE 242
 
-This is a collection of my projects for CSCE 242 - Web Applications at the University of South Carolina.
+This is a collection of my assignments and projects for CSCE 242 - Web Applications at the University of South Carolina.
 
-[Home](https://not-josue.github.io/csce242/)
+🌐 [Home](https://not-josue.github.io/csce242/)
 
-### Assignments
-
-1. [Assignment 01](https://not-josue.github.io/csce242/assignments/assignment01/index.html) - Basic HTML
-
-![A webpage concerning an introduction to web development shown on different viewports](./assets/images/csce240/assignments/assignment01.png)
-
-2. [Assignment 02](https://not-josue.github.io/csce242/assignments/assignment02/index.html) - Basic CSS
-
-![A webpage about a store that sells games and toys shown on different viewports](./assets/images/csce240/assignments/assignment02.png)
-
-3. [Assignment 03](https://not-josue.github.io/csce242/assignments/assignment03/index.html) - Page Layout
-
-![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/csce240/assignments/assignment03.png)
-
-4. [Assignment 04](https://not-josue.github.io/csce242/assignments/assignment04/index.html) - Recreate CSS Page
-
-![A webpage clone from the website of University of South Carolina shown on different viewports](./assets/images/csce240/assignments/assignment04.png)
-
-### Projects
-
-1. [Part 01](https://not-josue.github.io/csce242/projects/part1/part1.pdf) - Topic Selection
-
-![A pdf with the details of a website project proposal including the name of the website and its features.](./assets//images/csce240/projects/project_part1v2.png)
-
-2. [Part 02](https://not-josue.github.io/csce242/projects/part2/index.html) - Wireframe
-
-![A wireframe showing the basic layout and user flow of a website.](./assets/images/csce240/projects/project_part2.png)
+📁 [Repo](https://github.com/not-josue/not-josue.github.io/tree/main/csce242)
