@@ -16,9 +16,20 @@ document.getElementById("bg-settings").onclick = () => {
 const colors = ["blue", "green", "orange", "pink", "purple", "red"];
 const colorBtns = document.querySelectorAll("#palette button");
 
+// Removes Color Classes from html el
+const RemoveColors = () => {
+  colors.forEach((color) => {
+    if (html.classList.contains(color)) {
+      html.classList.remove(color);
+      return;
+    }
+  });
+};
+
 colorBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
     const id = e.target.id;
+    //   Set preferences in local storage
     if (localStorage.color === id) return;
     else {
       localStorage.color = id;
@@ -28,21 +39,10 @@ colorBtns.forEach((button) => {
   });
 });
 
-// Removes Color Classes from html el
-function RemoveColors() {
-  colors.forEach((color) => {
-    if (html.classList.contains(color)) {
-      html.classList.remove(color);
-      return;
-    }
-  });
-}
-
 // Data Settings
-const dataBtn = document.getElementById("data-settings");
-dataBtn.onclick = () => {
+document.getElementById("data-settings").onclick = () => {
   html.classList.toggle("projects");
-
+  // Set preferences in local storage
   if (html.classList.contains("projects")) {
     localStorage.data = "projects";
   } else localStorage.data = "assignments";
