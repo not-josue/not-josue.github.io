@@ -32,6 +32,12 @@ Recreating a page from the University of South Carolina's website.
 
 ![A webpage clone from the website of University of South Carolina shown on different viewports](./assets/images/readme/assignments/assignment04.png)
 
+🌐 [Assignment 05 - Basic JS](https://not-josue.github.io/csce242/assignments/assignment05/index.html)
+
+Using basic event handlers to show interactivity with elements.
+
+![A webpage clone from the website of University of South Carolina shown on different viewports](./assets/images/readme/assignments/assignment05.png)
+
 ## Projects
 
 🌐 [Part 01 - Topic Selection](https://not-josue.github.io/csce242/projects/part1/part1.pdf)
