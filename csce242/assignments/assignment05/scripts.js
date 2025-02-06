@@ -34,7 +34,6 @@ const ChangeImage = () => {
     ++counter;
     if (counter === imageUrls.length) counter = 0;
     imgEl.src = imageUrls[counter];
-    console.log(counter);
   };
 };
 

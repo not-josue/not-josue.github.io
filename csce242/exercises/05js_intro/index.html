@@ -11,6 +11,19 @@
     .sad {
         color: purple;
     }
+
+    .good-times {
+        background-color: pink;
+    }
+
+    .bad-times {
+        background-color: blue;
+        color: white;
+    }
+
+    .hidden {
+        display: none;
+    }
 </style>
 
 <body>
@@ -27,6 +40,21 @@
             <h2>Color Paragraph</h2>
             <button id="btn-color">Color Below</button>
             <p id="message">Change my color</p>
+        </section>
+
+        <section>
+            <h2>Happy Sad Experience</h2>
+            <button class="good-times" id="btn-happy">Be Happy</button>
+            <button class="bad-times" id="btn-sad">Be Sad</button>
+            <button id="btn-clear">Clear</button>
+            <p class="hidden" id="display"></p>
+        </section>
+
+        <section>
+            <h2>Input Event</h2>
+            <label for="emotions">Enter Feeling</label>
+            <input id="emotions" type="text">
+            <p id="copy">You are very </p>
         </section>
 
     </main>
