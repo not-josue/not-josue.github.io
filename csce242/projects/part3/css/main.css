@@ -1,0 +1,18 @@
+body {
+    min-height: 100vh;
+}
+
+main {
+    /* 100vh - Navigation */
+    height: calc(100vh - 90px);
+    /* Minus Navigation */
+    margin-top: 90px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    & p {
+        font-weight: 500;
+    }
+}

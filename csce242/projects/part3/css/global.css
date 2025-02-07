@@ -1,0 +1,252 @@
+/* Custom Properties */
+
+:root {
+    /* Neutral Colors */
+    --neutral-100: oklch(0.985 0 0);
+    --neutral-300: oklch(0.87 0 0);
+    --black: oklch(0.145 0 0);
+    --white: oklch(1 0 0);
+
+    /* Blue Colors */
+    --blue-400: oklch(0.707 0.165 254.624);
+    --blue-600: oklch(0.546 0.245 262.881);
+
+    --yellow: oklch(0.905 0.182 98.111);
+
+    /* Utilities */
+    --border-radius: 0.4rem;
+    --box-shadow: var(--neutral-300) 0px 5px 15px;
+    --nav-lg-font-size: 1.25rem;
+    --transition: 0.5s;
+}
+
+/* End Custom Properties */
+
+/* Reset Extension */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.7;
+    color: var(--black);
+}
+
+#primary-nav a,
+#mobile-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* End Reset Extension */
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* End Utility Classes */
+
+/* Navigation */
+
+body>header {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background-color: var(--neutral-100);
+    color: var(--black);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    #prime-nav {
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Hamburger */
+    #hamburger {
+        padding: 1rem;
+        background-color: var(--neutral-100);
+        border: none;
+        border-radius: var(--border-radius);
+        display: grid;
+        align-items: center;
+        row-gap: 0.3rem;
+        z-index: 999;
+        position: relative;
+    }
+
+    #hamburger span {
+        width: 2rem;
+        height: 0.2rem;
+        background-color: var(--black);
+        transition: transform var(--transition);
+    }
+
+    #hamburger:hover,
+    #hamburger:focus-visible {
+        background-color: var(--neutral-300);
+    }
+
+    #hamburger[aria-expanded="true"] {
+
+        & #burger-top {
+            transform: rotate(45deg) translate(0.5rem, 0.5rem);
+        }
+
+        & #burger-mid {
+            transform: scale(0);
+        }
+
+        & #burger-bot {
+            transform: rotate(-45deg) translate(0.4rem, -0.5rem);
+        }
+    }
+
+    #nav-brand {
+        display: flex;
+        column-gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+
+        span {
+            display: none;
+        }
+    }
+
+    /* Mobile Navigation */
+    #mobile-nav {
+        font-size: var(--nav-lg-font-size);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: inherit;
+        padding: 2rem;
+        background-color: inherit;
+    }
+
+    #mobile-nav:not(.hidden) {
+        display: grid;
+        row-gap: 0.5rem;
+    }
+
+    #mobile-nav>ul {
+        display: grid;
+        row-gap: 1rem;
+    }
+
+    #mobile-nav>ul>li>a {
+        padding: 1rem;
+        border-radius: var(--border-radius);
+    }
+
+    #mobile-nav>ul>li>a:hover {
+        background-color: var(--neutral-300);
+    }
+
+    #mobile-nav>div {
+        display: grid;
+        row-gap: 0.5rem;
+    }
+
+    /* Dark/Light Mode & Account */
+
+    #mobile-nav>div>div {
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+    }
+
+    #mobile-nav>div>div>button {
+        padding: 0.5rem;
+        border-radius: var(--border-radius);
+
+        & svg {
+            vertical-align: middle;
+        }
+
+        #sun {
+            fill: var(--yellow);
+        }
+
+        #moon {
+            display: none;
+            fill: var(--white);
+        }
+    }
+
+    #mobile-nav>div>div>button:hover,
+    #mobile-nav>div>div>a:hover {
+        background-color: var(--neutral-300);
+    }
+
+    #mobile-nav>div>div>a {
+        padding: 0.5rem;
+        border-radius: var(--border-radius);
+
+        & svg {
+            vertical-align: middle;
+        }
+    }
+
+    /* End Dark/Light Mode & Account */
+
+    /* Login */
+
+    #mobile-nav>div>a {
+        padding: 0.5rem;
+        background-color: var(--blue-400);
+        color: var(--white);
+        text-align: center;
+        border-radius: var(--border-radius);
+    }
+
+    #mobile-nav>div>a:hover {
+        background-color: var(--blue-600);
+    }
+
+    /* End Login */
+
+    /* End Mobile Navigation */
+}
+
+/* Navigation End */
+
+/* Main */
+
+main {
+    padding-inline: 2rem;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Footer */
+
+body>footer {
+    background-color: var(--neutral-100);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.825rem;
+
+    & p {
+        max-width: 65ch;
+        margin: auto;
+    }
+}
