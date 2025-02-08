@@ -78,6 +78,16 @@ ol:where([role="list"]) {
     list-style: none;
 }
 
+input,
+textarea {
+    font: inherit;
+    padding: 0.3rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
 /* End Reset */
 
 /* Utility Classes */

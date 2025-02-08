@@ -1,4 +1,4 @@
-@import url(./global.css);
+@import url(../css/global.css);
 
 /* Body */
 
@@ -15,7 +15,6 @@ main>div {
     display: grid;
     text-align: center;
     padding-inline: 1rem;
-    transition: all var(--transition);
 
     & p {
         font-size: 0.9rem;
@@ -24,12 +23,11 @@ main>div {
 }
 
 @media (min-width: 768px) {
+    #main-header {
+        padding-inline: 2rem;
+    }
 
     main>div {
-
-        & h1 {
-            font-size: 2rem;
-        }
 
         & p {
             font-size: 1.2rem;
