@@ -27,8 +27,6 @@ main {
     }
 
     form {
-        max-width: 80%;
-        margin: auto;
         padding: 2rem;
         border: 1px solid var(--body-font-color);
         border-radius: var(--form-border-radius);
@@ -38,12 +36,11 @@ main {
 
     form>div {
         display: grid;
-        max-width: 80%;
-        margin: auto;
 
         label {
             font-size: 1.125rem;
             font-weight: bold;
+            text-align: left;
         }
 
         input,
@@ -67,4 +64,11 @@ main {
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    main {
+
+        form {
+            padding-inline: 8rem;
+        }
+    }
+}
