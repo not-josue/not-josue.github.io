@@ -10,6 +10,7 @@ body {
 }
 
 main {
+
     padding: 2rem 1rem;
     max-width: 65ch;
     margin-inline: auto;
@@ -19,7 +20,9 @@ main {
         margin-bottom: 2rem;
     }
 
-    form {
+    /* End Tabs */
+
+    & form {
         padding: 2rem;
         border: 1px dotted var(--body-font-color);
         border-radius: var(--form-border-radius);
@@ -28,7 +31,7 @@ main {
         box-shadow: var(--box-shadow);
     }
 
-    form>div {
+    & form>div {
         display: grid;
 
         label {
@@ -37,21 +40,21 @@ main {
             text-align: left;
         }
 
-        input,
-        textarea {
+        & input {
             border-radius: var(--border-radius);
             border: 1px solid var(--body-font-color);
             margin-bottom: 2rem;
         }
 
-        button {
+        & button {
             background-color: var(--blue-600);
             color: var(--neutral-100);
             border-radius: var(--border-radius);
             padding: 0.5rem;
+            margin-bottom: 1rem;
         }
 
-        button:hover {
+        & button:hover {
             background-color: var(--blue-800);
         }
 

@@ -14,12 +14,20 @@
     --blue-600: oklch(0.546 0.245 262.881);
     --blue-800: oklch(0.424 0.199 265.638);
 
+    /* Green Colors */
+    --green-600: oklch(0.627 0.194 149.214);
+    --green-800: oklch(0.448 0.119 151.328);
+
+    /* Red Colors */
+    --red-600: oklch(0.577 0.245 27.325);
+    --red-800: oklch(0.444 0.177 26.899);
+
+    /* Yellow Colors */
     --yellow: oklch(0.905 0.182 98.111);
     --yellow-500: oklch(0.795 0.184 86.047);
 
     /* Utilities */
     --border-radius: 0.4rem;
-    --box-shadow: var(--neutral-300) 0px 5px 15px;
     --form-border-radius: 1rem;
     --nav-lg-font-size: 1.25rem;
     --transition: 0.3s;
@@ -32,6 +40,7 @@
     --hamburger-bg: var(--header-bg);
     --hamburger-bars: var(--body-font-color);
     --nav-links-bg-hover: var(--neutral-300);
+    --box-shadow: var(--nav-links-bg-hover) 0px 5px 15px;
 }
 
 /* End Custom Properties */
@@ -119,12 +128,12 @@ h1 {
     /* Hamburger */
 
     #hamburger {
-        padding: 1rem;
+        padding: 0.5rem 0.7rem;
         background-color: var(--hamburger-bg);
         border: 1px solid var(--body-font-color);
         border-radius: var(--border-radius);
         display: grid;
-        align-items: center;
+        align-content: center;
         row-gap: 0.3rem;
         z-index: 999;
         position: relative;
@@ -144,16 +153,17 @@ h1 {
 
     #hamburger[aria-expanded="true"] {
 
+
         & #burger-top {
-            transform: rotate(45deg) translate(0.4rem, 0.5rem);
+            transform: rotate(45deg) translateY(0.35rem) translateX(0.3rem);
         }
 
         & #burger-mid {
-            transform: scale(0);
+            transform: translateX(-5rem) scale(0);
         }
 
         & #burger-bot {
-            transform: rotate(-45deg) translate(0.4rem, -0.5rem);
+            transform: rotate(-45deg) translateY(-0.35rem) translateX(0.4rem);
         }
     }
 
@@ -173,6 +183,7 @@ h1 {
     background-color: inherit;
     padding: 2rem;
     background-color: inherit;
+    box-shadow: var(--box-shadow);
 }
 
 #mobile-nav:not(.hidden) {
@@ -251,7 +262,7 @@ h1 {
 /* Login */
 
 .login {
-    padding: 0.5rem;
+    padding: 0.3rem;
     background-color: var(--blue-600);
     color: var(--white);
     text-align: center;
@@ -360,6 +371,10 @@ html.dark {
 
         #prime-links a:hover {
             background-color: var(--nav-links-bg-hover);
+        }
+
+        #prime-links {
+            margin-right: 4rem;
         }
 
         #second-links {

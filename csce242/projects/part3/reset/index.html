@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in contact with Poké Pocket Promos.">
-    <title>Poké Pocket Promos - Contact</title>
-    <link rel="stylesheet" href="./contact.css">
+    <meta name="description" content="Reset your password for your Poké Pocket Promos account.">
+    <title>Poké Pocket Promos - Reset Account</title>
+    <link rel="stylesheet" href="./reset.css">
     <script>
         if (!("theme") in localStorage) {
             localStorage.theme = "light";
@@ -75,7 +75,7 @@
             <ul id="prime-links" role="list">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../cards/index.html">Cards</a></li>
-                <li><a href="./index.html">Contact</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
             </ul>
             <!-- Secondary Links -->
             <div id="second-links">
@@ -109,7 +109,7 @@
             <ul role="list">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../cards/index.html">Cards</a></li>
-                <li><a href="./index.html">Contact</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
             </ul>
             <!-- Buttons & Links -->
             <div>
@@ -145,26 +145,20 @@
 
     <main>
 
-        <h1>Contact Us</h1>
-        <p>
-            Poké Pocket Promos was made out of love for Pokémon and Pokémon TCG Pocket. If you find any errors or want
-            to
-            see new features, be sure to send us a message! ❤️
-        </p>
+        <h1>Reset Password</h1>
 
-        <form action="">
+        <form id="reset-pass-form" action="">
             <div>
-                <label for="contact-name">Name</label>
-                <input type="text" name="contact-email" id="contact-name" placeholder="Cynthia" required autofocus>
 
-                <label for="contact-email">Email</label>
-                <input type="email" name="contact-email" id="contact-email" placeholder="cynthia@sinnoh.com" required>
+                <label for="reset-pass-email">Email</label>
+                <input type="email" name="reset-pass-email" id="reset-pass-email" placeholder="cynthia@sinnoh.com"
+                    required autofocus>
 
-                <label for="contact-comments">Comments</label>
-                <textarea name="contact-comments" id="contact-comments" rows="5" placeholder="I want more Pokemon!"
-                    required></textarea>
+                <label for="reset-pass-fave">Favorite Pokémon</label>
+                <input type="text" name="reset-pass-fave" id="reset-pass-fave" required>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Reset</button>
+
             </div>
         </form>
 

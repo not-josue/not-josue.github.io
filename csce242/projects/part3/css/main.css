@@ -9,8 +9,6 @@ body {
     justify-content: space-between;
 }
 
-/* Home Only */
-
 main>div {
     display: grid;
     text-align: center;
