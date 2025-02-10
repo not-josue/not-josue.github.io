@@ -51,3 +51,9 @@ A description of each page in the project and its features.
 A wireframe to show the basic layout and user flow.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part2.png)
+
+🌐 [Part 03 - HTML & CSS](https://not-josue.github.io/csce242/projects/part3/index.html)
+
+The HTML & CSS of each page shown in the wireframe.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part3.png)
