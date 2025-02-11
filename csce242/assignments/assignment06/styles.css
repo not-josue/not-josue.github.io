@@ -170,7 +170,10 @@ main {
             }
 
             & svg {
-                fill: var(--gray);
+                padding-inline: 0.5rem;
+                border-radius: 0.5rem;
+                fill: var(--neutral-light);
+                background-color: var(--gray);
             }
 
             /* Star Fill */
