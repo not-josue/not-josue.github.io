@@ -1,0 +1,36 @@
+@import url(./global.css);
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main>div {
+    display: grid;
+    text-align: center;
+    padding-inline: 1rem;
+    transition: all var(--transition);
+
+    & p {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 768px) {
+
+    main>div {
+
+        & h1 {
+            font-size: 2rem;
+        }
+
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+}

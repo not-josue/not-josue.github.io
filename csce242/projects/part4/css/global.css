@@ -95,6 +95,10 @@ body>header {
     transition: all var(--transition);
 }
 
+main {
+    transition: all var(--transition);
+}
+
 h1 {
     font-size: 1.5rem;
 }
