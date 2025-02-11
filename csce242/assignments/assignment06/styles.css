@@ -1,0 +1,246 @@
+@import url(../../css/global/styles.css);
+
+:root {
+    --blue: oklch(0.707 0.165 254.624);
+    --cyan: oklch(0.865 0.127 207.078);
+    --cyan-dark: oklch(0.609 0.126 221.723);
+    --emerald: oklch(0.845 0.143 164.978);
+    --gray: oklch(0.87 0 0);
+    --green: oklch(0.792 0.209 151.711);
+    --neutral-light: oklch(0.985 0 0);
+    --red: oklch(0.704 0.191 22.216);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 0.85rem;
+    min-height: 100vh;
+
+    /* Header */
+    &>header {
+        text-align: center;
+        margin-block: 2rem;
+
+        & p {
+            max-width: 45ch;
+            margin-inline: auto;
+        }
+    }
+}
+
+main {
+    max-width: 65ch;
+    margin-inline: auto;
+    text-align: center;
+
+    & section {
+        margin-bottom: 2rem;
+    }
+
+    /* Tabs */
+    & section:first-of-type {
+        font-size: 1rem;
+
+        & summary {
+            list-style-type: "▼";
+        }
+
+        details[open]>summary {
+            list-style-type: "▲";
+        }
+
+        & details:hover {
+            cursor: pointer;
+        }
+
+        & ul {
+            display: grid;
+            row-gap: 0.2rem;
+        }
+
+        & button {
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            background-color: inherit;
+        }
+
+        & button.is-active {
+            background-color: var(--cyan);
+        }
+
+        & button:hover {
+            background-color: var(--emerald);
+        }
+
+        /* Large Viewport List */
+        &>ul {
+            display: none;
+        }
+
+    }
+
+    /* Interactivity */
+    & section:last-of-type {
+        box-shadow: var(--gray) 0px 5px 15px;
+        max-width: 300px;
+        margin-inline: auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        .card {
+            display: grid;
+            row-gap: 1rem;
+            justify-items: center;
+
+            /* Exercise 1 */
+            & label {
+                max-width: 35ch;
+            }
+
+            & input {
+                border: 1px solid var(--gray);
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            & input:focus-visible {
+                outline-color: var(--cyan-dark);
+            }
+
+            & figure {
+                height: 200px;
+                width: 200px;
+                border-radius: 0.5rem;
+                background-color: var(--gray);
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-height: 100%;
+                    border-radius: inherit;
+                }
+            }
+
+            /* Exercise 2 */
+            #button-wrapper {
+                display: flex;
+                justify-content: center;
+                column-gap: 0.4rem;
+
+                & button {
+                    padding: 0.3rem;
+                    border-radius: 0.3rem;
+                    background-color: var(--neutral-light);
+                }
+
+                & button:hover {
+                    color: var(--neutral-light);
+                }
+
+                & button[data-color="red"] {
+                    border: 3px solid var(--red);
+                }
+
+                & button[data-color="red"]:hover {
+                    background-color: var(--red);
+                }
+
+                & button[data-color="green"] {
+                    border: 3px solid var(--green);
+                }
+
+                & button[data-color="green"]:hover {
+                    background-color: var(--green);
+                }
+
+                & button[data-color="blue"] {
+                    border: 3px solid var(--blue);
+                }
+
+                & button[data-color="blue"]:hover {
+                    background-color: var(--blue);
+                }
+            }
+
+            & svg {
+                fill: var(--gray);
+            }
+
+            /* Star Fill */
+
+            #button-wrapper:has(button[data-color="red"].is-active)+svg {
+                fill: var(--red);
+            }
+
+            #button-wrapper:has(button[data-color="green"].is-active)+svg {
+                fill: var(--green);
+            }
+
+            #button-wrapper:has(button[data-color="blue"].is-active)+svg {
+                fill: var(--blue);
+            }
+
+        }
+    }
+
+    &>a {
+        text-decoration: none;
+    }
+}
+
+/* Exercise Control */
+main:has(button.exercise-2.is-active) .card[data-theme="exercise-1"] {
+    display: none;
+}
+
+main:has(button.exercise-1.is-active) .card[data-theme="exercise-2"] {
+    display: none;
+}
+
+@media (min-width: 641px) {
+    body {
+        font-size: 1rem;
+    }
+
+    main {
+
+        /* Tabs */
+        & section:first-of-type {
+
+            & details {
+                display: none;
+            }
+
+            &>ul {
+                display: flex;
+                justify-content: center;
+
+                & li:first-of-type::after {
+                    content: "|";
+                    display: inline-block;
+                    margin-right: 0.4rem;
+                }
+            }
+        }
+
+        /* Interactivity */
+        & section:last-of-type {
+            max-width: 500px;
+
+            .card {
+
+                & svg {
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
