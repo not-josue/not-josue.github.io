@@ -36,7 +36,13 @@ Recreating a page from the University of South Carolina's website.
 
 Using basic event handlers to show interactivity with elements.
 
-![A webpage clone from the website of University of South Carolina shown on different viewports](./assets/images/readme/assignments/assignment05.png)
+![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment05.png)
+
+🌐 [Assignment 06 - Conditionals](https://not-josue.github.io/csce242/assignments/assignment06/index.html)
+
+Displaying content based on user input and tab selection.
+
+![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment06.png)
 
 ## Projects
 
