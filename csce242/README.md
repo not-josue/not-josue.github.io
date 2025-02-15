@@ -63,3 +63,9 @@ A wireframe to show the basic layout and user flow.
 The HTML & CSS of each page shown in the wireframe.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part3.png)
+
+🌐 [Part 04 - Images](https://not-josue.github.io/csce242/projects/part4/index.html)
+
+The website with all images, text, & color scheme.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part4.webp)
