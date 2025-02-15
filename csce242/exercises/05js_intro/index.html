@@ -8,6 +8,11 @@
 </head>
 
 <style>
+    :root {
+        --circle-color: black;
+        --donation-percent: 50%
+    }
+
     .sad {
         color: purple;
     }
@@ -23,6 +28,48 @@
 
     .hidden {
         display: none;
+    }
+
+    #circle {
+        height: 30px;
+        width: 30px;
+        background-color: var(--circle-color);
+        border-radius: 50px;
+        position: relative;
+        top: 20%;
+        left: 50%;
+    }
+
+    #ball-area {
+        position: relative;
+        height: 200px;
+    }
+
+    #donations {
+        &>* {
+            margin-bottom: 1rem;
+        }
+
+        & label {
+            display: block;
+        }
+
+        .error {
+            color: darkred;
+        }
+
+        &>div:last-of-type {
+            display: flex;
+            column-gap: 1rem;
+        }
+
+        #thermometer {
+            height: 200px;
+            width: 2.5rem;
+            border-radius: 0.5rem;
+            border: 1px dotted gray;
+            background: linear-gradient(red 0% var(--donation-percent), white 50% 100%);
+        }
     }
 </style>
 
@@ -55,6 +102,39 @@
             <label for="emotions">Enter Feeling</label>
             <input id="emotions" type="text">
             <p id="copy">You are very </p>
+        </section>
+
+        <section>
+            <h2>User Input</h2>
+            <label for="txt-color">Enter Color:</label>
+            <input type="text" id="txt-color" name="color">
+            <button id="btn-choose-color">Show Color</button>
+            <p id="color-message"></p>
+        </section>
+
+        <section id="ball-area">
+            <h2>Ball Animation</h2>
+            <div>
+                <button id="btn-up">up</button>
+                <button id="btn-down">down</button>
+                <input type="color" name="" id="">
+            </div>
+            <div id="circle"></div>
+        </section>
+
+        <section id="donations">
+            <h2>Donations</h2>
+            <p></p>
+            <div>
+                <label for="txt-donation">Enter Donations</label>
+                <input id="txt-donation" type="number">
+                <button id="btn-add-donation">Add</button>
+                <span id="donation-error" class="error hidden">Invalid</span>
+            </div>
+            <div>
+                <div id="thermometer"></div>
+                <p id="donation-message">$200 To Go</p>
+            </div>
         </section>
 
     </main>
