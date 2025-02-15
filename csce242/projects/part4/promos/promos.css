@@ -75,7 +75,6 @@ article {
 
         .card-attack-name {
             display: flex;
-            column-gap: 4rem;
         }
     }
 
@@ -134,5 +133,18 @@ article+a:hover {
     main {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    article {
+
+        .poke-attack {
+
+            .card-attack-name {
+                column-gap: 4rem;
+            }
+        }
     }
 }
