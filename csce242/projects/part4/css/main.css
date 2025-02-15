@@ -16,7 +16,7 @@ main>div {
     transition: all var(--transition);
 
     & p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         font-weight: 500;
         overflow: hidden;
         margin: 0 auto;
