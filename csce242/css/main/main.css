@@ -18,6 +18,13 @@
     --green-800: oklch(0.448 0.119 151.328);
     --green-950: oklch(0.266 0.065 152.934);
 
+    --neutral-50: oklch(0.985 0 0);
+    --neutral-300: oklch(0.87 0 0);
+    --neutral-500: oklch(0.556 0 0);
+    --neutral-600: oklch(0.439 0 0);
+    --neutral-800: oklch(0.269 0 0);
+    --neutral-950: oklch(0.145 0 0);
+
     --orange-50: oklch(0.98 0.016 73.684);
     --orange-300: oklch(0.837 0.128 66.29);
     --orange-500: oklch(0.705 0.213 47.604);
@@ -123,6 +130,16 @@ html.pink {
     --color-h: var(--pink-600);
 }
 
+html.neutral {
+    /* Backgrounds */
+    --bg-start: var(--neutral-50);
+    --bg-mid: var(--neutral-300);
+    --bg-end: var(--neutral-500);
+
+    /* Headings */
+    --color-h: var(--neutral-600);
+}
+
 /* Dark Themes */
 
 html.dark {
@@ -214,6 +231,12 @@ html.dark.pink {
     --bg-dark-start: var(--pink-600);
     --bg-dark-mid: var(--pink-800);
     --bg-dark-end: var(--pink-950);
+}
+
+html.dark.neutral {
+    --bg-dark-start: var(--neutral-600);
+    --bg-dark-mid: var(--neutral-800);
+    --bg-dark-end: var(--neutral-950);
 }
 
 /* Main Content */
@@ -536,6 +559,14 @@ html.dark #orange {
 
 html.dark #pink {
     background-color: var(--pink-300);
+}
+
+#neutral {
+    background-color: var(--neutral-600);
+}
+
+html.dark #neutral {
+    background-color: var(--neutral-300);
 }
 
 /* Media Queries */

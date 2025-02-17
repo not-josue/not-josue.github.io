@@ -13,7 +13,7 @@ document.getElementById("bg-settings").onclick = () => {
 };
 
 // Font Color Themes (Purple is Default)
-const colors = ["blue", "green", "orange", "pink", "purple", "red"];
+const colors = ["blue", "green", "orange", "neutral", "pink", "purple", "red"];
 const colorBtns = document.querySelectorAll("#palette button");
 
 // Removes Color Classes from html el
