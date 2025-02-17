@@ -12,7 +12,7 @@ document.getElementById("bg-settings").onclick = () => {
   }
 };
 
-// Font Color Themes (Purple is Default)
+// Font Color Themes (Neutral is Default)
 const colors = ["blue", "green", "orange", "neutral", "pink", "purple", "red"];
 const colorBtns = document.querySelectorAll("#palette button");
 
