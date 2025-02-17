@@ -55,12 +55,12 @@
 
 
     /* Background Colors */
-    --bg-start: var(--purple-50);
-    --bg-mid: var(--purple-300);
-    --bg-end: var(--purple-500);
-    --bg-dark-start: var(--purple-600);
-    --bg-dark-mid: var(--purple-800);
-    --bg-dark-end: var(--purple-950);
+    --bg-start: var(--neutral-50);
+    --bg-mid: var(--neutral-300);
+    --bg-end: var(--neutral-500);
+    --bg-dark-start: var(--neutral-600);
+    --bg-dark-mid: var(--neutral-800);
+    --bg-dark-end: var(--neutral-950);
 
     --bg-main: var(--white);
 
@@ -128,6 +128,16 @@ html.pink {
 
     /* Headings */
     --color-h: var(--pink-600);
+}
+
+html.purple {
+    /* Backgrounds */
+    --bg-start: var(--purple-50);
+    --bg-mid: var(--purple-300);
+    --bg-end: var(--purple-500);
+
+    /* Headings */
+    --color-h: var(--purple-600);
 }
 
 html.neutral {
@@ -231,6 +241,12 @@ html.dark.pink {
     --bg-dark-start: var(--pink-600);
     --bg-dark-mid: var(--pink-800);
     --bg-dark-end: var(--pink-950);
+}
+
+html.dark.purple {
+    --bg-dark-start: var(--purple-600);
+    --bg-dark-mid: var(--purple-800);
+    --bg-dark-end: var(--purple-950);
 }
 
 html.dark.neutral {
