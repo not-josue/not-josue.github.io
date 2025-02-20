@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #number-fun {
+
+            & label {
+                display: block;
+                margin-block-end: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Loops</h1>
+
+    <section id="number-fun">
+        <h2>Number Fun</h2>
+        <label for="txt-start">Start
+            <input id="txt-start" type="number">
+        </label>
+        <label for="txt-end">End
+            <input id="txt-end" type="number">
+        </label>
+        <p class="error" id="error-num-order"></p>
+        <button id="btn-display">Display</button>
+        <ul id="start-end-display"></ul>
+        <p id="fav-message"></p>
+    </section>
+
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>

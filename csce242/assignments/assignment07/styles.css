@@ -1,0 +1,21 @@
+@import url(../../css/global/styles.css);
+
+h1 {
+    text-align: center;
+    margin-block: 2rem;
+}
+
+#stairs {
+    max-width: 25ch;
+    border-inline: solid black 1rem;
+    margin-inline: auto;
+    padding-block: 1rem;
+
+    & hr {
+        border: solid black 4px;
+    }
+
+    & hr:not(:last-of-type) {
+        margin-block-end: 2rem;
+    }
+}
