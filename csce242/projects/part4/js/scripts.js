@@ -15,6 +15,13 @@ burger.onclick = () => {
   body.classList.toggle("overflow");
 };
 
+// Closes Mobile Nav on Resize
+window.onresize = () => {
+  if (window.innerWidth >= 1024 && burger.ariaExpanded === "true") {
+    burger.click();
+  }
+};
+
 // Dark/Light Mode
 const html = document.documentElement;
 const lgThemeBtn = document.getElementById("lg-theme-btn");
