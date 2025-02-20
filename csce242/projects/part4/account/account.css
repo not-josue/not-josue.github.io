@@ -80,22 +80,20 @@ aside {
 
     & button {
         color: var(--white);
-        anchor-name: --data;
     }
 
     #popover {
-        position: fixed;
-        position-anchor: --data;
-        inset: auto;
+        position: absolute;
+        bottom: 2.5rem;
+        right: 0.5rem;
         background-color: var(--body-bg);
         box-shadow: var(--box-shadow);
-        bottom: anchor(--data top);
-        right: anchor(--data right);
         margin-block-end: 1rem;
         border: none;
         padding: 0.5rem 1rem;
         border-radius: var(--border-radius);
         color: var(--body-font-color);
+        display: none;
 
         & input {
             border-radius: var(--border-radius);
@@ -103,10 +101,14 @@ aside {
         }
 
     }
+}
 
-    #popover:popover-open {
+aside:has([aria-expanded="true"]) {
+
+    #popover {
         display: grid;
         row-gap: 1rem;
+
     }
 }
 

@@ -184,9 +184,8 @@ h1 {
     position: absolute;
     top: 90px;
     left: 0;
-    background-color: inherit;
+    background-color: var(--header-bg);
     padding: 2rem;
-    background-color: inherit;
     box-shadow: var(--box-shadow);
 }
 

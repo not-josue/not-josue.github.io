@@ -34,7 +34,17 @@ main>div {
             overflow: hidden;
             margin: 0 auto;
             white-space: nowrap;
-            animation: typewriter 6s steps(105, end);
+            animation: typewriter 4s steps(105, end);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main>div {
+
+        & p {
+            animation-duration: 8s;
         }
     }
 }
