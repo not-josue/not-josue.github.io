@@ -89,8 +89,8 @@ aside {
         inset: auto;
         background-color: var(--body-bg);
         box-shadow: var(--box-shadow);
-        bottom: anchor(top);
-        right: anchor(right);
+        bottom: anchor(--data top);
+        right: anchor(--data right);
         margin-block-end: 1rem;
         border: none;
         padding: 0.5rem 1rem;

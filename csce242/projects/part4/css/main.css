@@ -18,19 +18,6 @@ main>div {
     & p {
         font-size: 0.7rem;
         font-weight: 500;
-        overflow: hidden;
-        margin: 0 auto;
-        white-space: nowrap;
-        animation: typewriter 8s steps(105, end);
-    }
-}
-
-@media (prefers-reduced-motion) {
-    main>div {
-
-        & p {
-            animation: none;
-        }
     }
 }
 
@@ -44,6 +31,10 @@ main>div {
 
         & p {
             font-size: 1.2rem;
+            overflow: hidden;
+            margin: 0 auto;
+            white-space: nowrap;
+            animation: typewriter 6s steps(105, end);
         }
     }
 }
@@ -56,5 +47,14 @@ main>div {
 
     to {
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    main>div {
+
+        & p {
+            animation: none;
+        }
     }
 }
