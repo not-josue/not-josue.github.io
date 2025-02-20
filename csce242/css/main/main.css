@@ -377,8 +377,8 @@ h2 {
     background-color: var(--bg-main);
     padding: 0.5rem;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
     border-radius: 0.6rem;
     anchor-name: --color-anchor;
     display: flex;
@@ -422,8 +422,8 @@ html.projects {
 
 #data-settings {
     position: fixed;
-    bottom: 2rem;
-    right: 12rem;
+    bottom: 1rem;
+    right: 10rem;
     border: none;
     border-radius: 0.5rem;
     padding: 0.7rem;
@@ -465,6 +465,11 @@ svg {
 }
 
 /* Color Settings */
+
+/* Issues with polyfill on mobile */
+#color-mode {
+    display: none;
+}
 
 #settings>div {
     position: relative;
@@ -514,9 +519,8 @@ svg {
     border: none;
     border-radius: 0.2rem;
     color: var(--white);
-    padding: 0.2rem;
+    padding: 0.4rem;
     transition: var(--transition);
-    font-size: small;
 }
 
 #palette button:hover {
@@ -619,9 +623,8 @@ html.dark #neutral {
         font-size: 1rem;
     }
 
-    #palette button {
-        font-size: medium;
-        padding: 0.4rem;
+    #color-mode {
+        display: block;
     }
 }
 

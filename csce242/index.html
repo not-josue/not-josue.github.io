@@ -16,8 +16,6 @@
     <!-- https://github.com/oddbird/css-anchor-positioning -->
     <!-- Can I Use for Anchor Positioning -->
     <!-- https://caniuse.com/css-anchor-positioning -->
-    <script src="https://cdn.jsdelivr.net/npm/@oddbird/popover-polyfill@latest" crossorigin="anonymous" defer></script>
-
     <script type="module">
         if (!("anchorName" in document.documentElement.style)) {
             import("https://unpkg.com/@oddbird/css-anchor-positioning");
@@ -213,7 +211,7 @@
                 </span>
             </button>
             <!-- Color Mode -->
-            <div>
+            <div id="color-mode">
                 <button id="color-settings" popovertarget="palette" aria-haspopup="listbox"
                     aria-label="Open color settings">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="30" width="30"
