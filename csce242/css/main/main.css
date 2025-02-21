@@ -607,10 +607,6 @@ html.dark #neutral {
     .link-card p {
         font-size: 1rem;
     }
-
-    #color-mode {
-        display: block;
-    }
 }
 
 @media (min-width: 1440px) {
