@@ -387,6 +387,10 @@ h2 {
 
     /* GitHub Link */
 
+    & a {
+        padding: 0.3rem;
+    }
+
     & a:hover {
 
         svg {
