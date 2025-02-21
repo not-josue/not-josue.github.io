@@ -77,7 +77,7 @@
     --box-shadow: var(--bg-mid);
 
     /* Transition */
-    --transition: 0.3s;
+    --transition: 0.4s;
 }
 
 html.blue {
@@ -273,8 +273,8 @@ main {
     background-color: var(--bg-main);
     padding: 2rem;
     border-radius: 1rem;
-    transition: color var(--transition);
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
+    transition: all var(--transition);
 }
 
 #description {
@@ -300,7 +300,7 @@ main {
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
     background-color: var(--bg-start);
     color: var(--color-h);
-    transition: color var(--transition);
+    transition: all var(--transition);
 }
 
 .link-card li {
@@ -348,7 +348,6 @@ h1,
 h2,
 h3 {
     color: var(--color-h);
-    transition: color var(--transition);
     text-align: center;
 }
 
@@ -380,9 +379,9 @@ h2 {
     bottom: 1rem;
     right: 1rem;
     border-radius: 0.6rem;
-    anchor-name: --color-anchor;
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 0.3rem;
     box-shadow: 0 0.5rem 1rem 0 var(--box-shadow);
 
@@ -421,15 +420,11 @@ html.projects {
 }
 
 #data-settings {
-    position: fixed;
-    bottom: 1rem;
-    right: 10rem;
     border: none;
     border-radius: 0.5rem;
     padding: 0.7rem;
     color: var(--white);
     background-color: var(--bg-end);
-    transition: var(--transition);
 }
 
 #data-settings:hover,
@@ -466,17 +461,8 @@ svg {
 
 /* Color Settings */
 
-/* Issues with polyfill on mobile */
 #color-mode {
-    display: none;
-}
-
-#settings>div {
     position: relative;
-}
-
-#color-settings {
-    transition: var(--transition);
 }
 
 #color-settings svg {
@@ -497,22 +483,22 @@ svg {
 /* Popover */
 
 #palette {
-    position: fixed;
-    position-anchor: --color-anchor;
+    position: absolute;
+    right: -0.5rem;
+    bottom: 3rem;
     background-color: var(--bg-main);
-    margin: 0;
-    inset: auto;
-    border: none;
     padding: 0.7rem;
     border-radius: 0.4rem;
     margin-block-end: 0.5rem;
-    bottom: anchor(--color-anchor top);
-    right: anchor(--color-anchor right);
+    display: none;
+    row-gap: 0.4rem;
 }
 
-#palette:popover-open {
-    display: grid;
-    row-gap: 0.4rem;
+#color-mode:has(button[aria-expanded="true"]) {
+
+    #palette {
+        display: grid;
+    }
 }
 
 #palette button {
@@ -520,7 +506,6 @@ svg {
     border-radius: 0.2rem;
     color: var(--white);
     padding: 0.4rem;
-    transition: var(--transition);
 }
 
 #palette button:hover {

@@ -47,3 +47,10 @@ document.getElementById("data-settings").onclick = () => {
     localStorage.data = "projects";
   } else localStorage.data = "assignments";
 };
+
+// Opens and Closes Color Palette
+const popupBtn = document.getElementById("color-settings");
+popupBtn.onclick = () => {
+  const isExpanded = popupBtn.ariaExpanded === "true";
+  popupBtn.ariaExpanded = !isExpanded;
+};

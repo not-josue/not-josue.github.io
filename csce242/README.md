@@ -44,6 +44,12 @@ Displaying content based on user input and tab selection.
 
 ![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment06.png)
 
+🌐 [Assignment 07 - Loops](https://not-josue.github.io/csce242/assignments/assignment07/index.html)
+
+Using loops to generate elements and run functions multiple times.
+
+![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment07.png)
+
 ## Projects
 
 🌐 [Part 01 - Topic Selection](https://not-josue.github.io/csce242/projects/part1/part1.pdf)
