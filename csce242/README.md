@@ -56,22 +56,28 @@ Using loops to generate elements and run functions multiple times.
 
 A description of each page in the project and its features.
 
-![A pdf with the details of a website project proposal including the name of the website and its features.](./assets//images/readme/projects/project_part1v2.png)
+![A pdf with the details of a website project proposal including the name of the website and its features.](./assets//images/readme/projects/project_part01v2.png)
 
 🌐 [Part 02 - Wireframe](https://not-josue.github.io/csce242/projects/part2/index.html)
 
 A wireframe to show the basic layout and user flow.
 
-![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part2.png)
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part02.png)
 
 🌐 [Part 03 - HTML & CSS](https://not-josue.github.io/csce242/projects/part3/index.html)
 
 The HTML & CSS of each page shown in the wireframe.
 
-![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part3.png)
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part03.png)
 
 🌐 [Part 04 - Images](https://not-josue.github.io/csce242/projects/part4/index.html)
 
 The website with all images, text, & color scheme.
 
-![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part4.webp)
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part04.webp)
+
+🌐 [Part 05 - JavaScript](https://not-josue.github.io/csce242/projects/part5/index.html)
+
+Intermediate JavaScript to sort the gallery page & fetch data.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part05.png)
