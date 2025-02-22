@@ -78,6 +78,6 @@ The website with all images, text, & color scheme.
 
 🌐 [Part 05 - JavaScript](https://not-josue.github.io/csce242/projects/part5/index.html)
 
-Intermediate JavaScript to sort the gallery page & fetch data.
+Intermediate JavaScript to fetch data & sort the gallery page.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part05.png)
