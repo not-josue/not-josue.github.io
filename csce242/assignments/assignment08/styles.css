@@ -1,7 +1,7 @@
 @import url(../../css/global/styles.css);
 
 :root {
-    --emerald: hsl(161, 94%, 30%);
+    --sky: hsl(201, 96%, 32%);
     --indigo: hsl(244, 55%, 41%);
     --neutral-50: hsl(0, 0%, 98%);
     --neutral-400: hsl(0, 0%, 64%);
@@ -47,7 +47,7 @@ main {
 }
 
 .modal-btn:hover {
-    background-color: var(--emerald);
+    background-color: var(--sky);
     color: var(--neutral-50);
 }
 
