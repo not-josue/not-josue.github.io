@@ -50,6 +50,12 @@ Using loops to generate elements and run functions multiple times.
 
 ![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment07.png)
 
+🌐 [Assignment 08 - Arrays](https://not-josue.github.io/csce242/assignments/assignment08/index.html)
+
+Structuring arrays to help display interactive data in a modal.
+
+![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment08.png)
+
 ## Projects
 
 🌐 [Part 01 - Topic Selection](https://not-josue.github.io/csce242/projects/part1/part1.pdf)
