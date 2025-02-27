@@ -56,6 +56,12 @@ Structuring arrays to help display interactive data in a modal.
 
 ![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment08.png)
 
+🌐 [Assignment 09 - Classes](https://not-josue.github.io/csce242/assignments/assignment09/index.html)
+
+Creating a class to display a gallery of similar items and modals.
+
+![A webpage using flexbox to create different layouts for sections shown on different viewports](./assets/images/readme/assignments/assignment09.png)
+
 ## Projects
 
 🌐 [Part 01 - Topic Selection](https://not-josue.github.io/csce242/projects/part1/part1.pdf)
