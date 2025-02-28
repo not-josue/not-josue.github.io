@@ -1,0 +1,126 @@
+@import url(../css/global.css);
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+
+    padding: 2rem 1rem;
+    max-width: 65ch;
+    margin-inline: auto;
+    text-align: center;
+
+    &>*:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    /* Tabs */
+
+    &>div {
+        display: flex;
+        justify-content: center;
+
+        & button {
+            padding: 0.5rem 1rem;
+            background-color: var(--footer-bg);
+            color: var(--body-font-color);
+            transition: var(--transition);
+        }
+
+        & button:hover {
+            background-color: var(--nav-links-bg-hover);
+        }
+
+        & button[aria-pressed="true"] {
+            background-color: var(--green-600);
+            color: var(--white);
+        }
+
+        & button[aria-pressed="true"]:hover {
+            background-color: var(--green-800);
+        }
+
+        & button:first-of-type {
+            border: 1px solid var(--body-font-color);
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-right: none;
+        }
+
+        & button:last-of-type {
+            border: 1px solid var(--body-font-color);
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            border-left: none;
+        }
+    }
+
+    /* End Tabs */
+
+    & form {
+        padding: 2rem;
+        border: 1px dotted var(--body-font-color);
+        border-radius: var(--form-border-radius);
+        text-align: left;
+        transition: var(--transition);
+        box-shadow: var(--box-shadow);
+    }
+
+    & form>div {
+        display: grid;
+
+        label {
+            font-size: 1.125rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        & input {
+            border-radius: var(--border-radius);
+            border: 1px solid var(--body-font-color);
+            margin-bottom: 2rem;
+        }
+
+        & button {
+            background-color: var(--blue-600);
+            color: var(--neutral-100);
+            border-radius: var(--border-radius);
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        & button:hover {
+            background-color: var(--blue-800);
+        }
+
+        & a {
+            background-color: var(--red-600);
+            color: var(--neutral-100);
+            border-radius: var(--border-radius);
+            padding: 0.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        & a:hover {
+            background-color: var(--red-800);
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+
+        form {
+            padding-inline: 8rem;
+        }
+    }
+}
