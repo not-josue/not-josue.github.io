@@ -93,3 +93,9 @@ The website with all images, text, & color scheme.
 Intermediate JavaScript to fetch data & sort the gallery page.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part05.png)
+
+🌐 [Part 06 - Data Update](https://not-josue.github.io/csce242/projects/part6/index.html)
+
+Updating JSON data and sorting features with newly released cards.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part06.png)
