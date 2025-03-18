@@ -342,14 +342,18 @@ main {
 
 .link-card-links {
     display: grid;
-}
 
-.link-card-links a {
-    color: var(--color-para);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
+    & a {
+        color: var(--color-para);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+    }
+
+    & svg {
+        fill: var(--color-para);
+    }
 }
 
 .link-card-links a:hover {
