@@ -338,6 +338,8 @@ main {
     outline-width: 0.5rem;
 }
 
+/* Link Card Links for Setup Assignments */
+
 .link-card-links {
     display: grid;
 }
