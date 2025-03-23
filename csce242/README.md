@@ -99,3 +99,9 @@ Intermediate JavaScript to fetch data & sort the gallery page.
 Updating JSON data and sorting features with newly released cards.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part06.png)
+
+🌐 [Part 07 - Contact Form & iFrame](https://not-josue.github.io/csce242/projects/part7/index.html)
+
+Updating JSON data and sorting features with newly released cards.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part07.png)
