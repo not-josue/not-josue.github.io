@@ -105,3 +105,9 @@ Updating JSON data and sorting features with newly released cards.
 Updating JSON data and sorting features with newly released cards.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part07.png)
+
+🌐 [Part 08 - React](https://not-josue.github.io/poke-pocket-promos/)
+
+Migrating the application to React. Interactivity features not enabled.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part08.png)
