@@ -111,3 +111,9 @@ Updating JSON data and sorting features with newly released cards.
 Migrating the application to React. Interactivity features not enabled.
 
 ![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part08.png)
+
+🌐 [Part 09 - Backend](https://github.com/not-josue/poke-pocket-promos-backend)
+
+Separating data from the frontend by creating an API to fetch from.
+
+![A wireframe showing the basic layout and user flow of a website.](./assets/images/readme/projects/project_part09.png)
