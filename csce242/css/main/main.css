@@ -284,9 +284,11 @@ main {
 
 #assignments {
     padding-inline-start: 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
+    display: grid;
+    justify-items: center;
     gap: 1rem;
 }
 
@@ -301,6 +303,7 @@ main {
     background-color: var(--bg-start);
     color: var(--color-h);
     transition: all var(--transition);
+    width: 100%;
 }
 
 .link-card li {
@@ -626,12 +629,21 @@ html.dark #neutral {
     }
 
     #assignments {
-        flex-direction: row;
-        flex-wrap: wrap;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        grid-template-columns: 1fr 1fr;
+
+        .link-card p {
+            font-size: 1rem;
+        }
     }
 
-    .link-card p {
-        font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+
+    #assignments {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
